@@ -96,6 +96,8 @@ alias la='ls -A'
 alias l='ls -lart'
 alias be='bundle exec'
 alias curl='curl -w "\n"' #append new line at the end of curl output
+alias open=gnome-open
+alias prunegit='git remote prune origin && git gc --prune=now && git gc --aggressive && git tag -l | xargs git tag -d && git fetch --tags'
 
 shopt -s cdable_vars
 
